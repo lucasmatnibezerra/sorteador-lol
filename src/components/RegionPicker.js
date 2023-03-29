@@ -225,11 +225,11 @@ function RegionPicker() {
   return (
     <div className="justify-center items-center">
       <div className="pt-[2%] pb-[5%] ">
-        <h1 className="font-lol text-[73px] bg-clip-text text-transparent bg-gradient-to-b from-[rgb(103_71_31)] to-[rgb(203_172_98)]">
+        <h1 className=" font-bold text-[73px] bg-clip-text text-transparent bg-gradient-to-b from-[rgb(103_71_31)] to-[rgb(203_172_98)]">
           Sorteio de Regiões do League of Legends
         </h1>
       </div>
-      <button className="font-lol " onClick={raffleRegion}>
+      <button  onClick={raffleRegion}>
         Sortear Região
       </button>
       {index === -1 ? (
@@ -238,11 +238,11 @@ function RegionPicker() {
         </div>
       ) : (
         <div className="pt-[5%]">
-          <p className="font-lol text-[60px] font-[700]">Região Sorteada</p>
-          <p className="font-lol text-[76px] tracking-[12px] font-[500]">
+          <p className=" text-[60px] font-[700]">Região Sorteada</p>
+          <p className=" text-[76px] tracking-[12px] font-[500]">
             {region}
           </p>
-          <p className="text-[25px] font-lol">{champions.join(", ")}</p>
+          <p className="text-[25px] ">{champions.join(", ")}</p>
         </div>
       )}
     </div>
